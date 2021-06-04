@@ -62,4 +62,4 @@ app.get("/", (req, res) => {
   res.send("Server Home");
 });
 
-app.listen(5000);
+app.listen(process.env.POST || 5000);
